@@ -6,7 +6,7 @@ import argparse
 parser = argparse.ArgumentParser(description="setting for serial communication!")
 parser.add_argument("--port", required=True, type=str,
         help="this is the serial port chosen", 
-        choices=["/dev/ttyS0", "/dev/ttyAM0", "/dev/ttyUSB0"])
+        choices=["/dev/ttyS0", "/dev/ttyAMA0", "/dev/ttyUSB0"])
 parser.add_argument("--baud", required=True, type=int,
         help="this is the baudrate for UART transmission",
         choices=[1200, 4800, 9600, 19200, 38400, 115200])
