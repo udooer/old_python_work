@@ -31,5 +31,6 @@ while 1:
     counter_s = str(counter)
     send_data = "counter=" + counter_s + ", " + "time=" + time_s + '\n'
     ser.write(send_data.encode())
+    print("sending data ", counter)
     time.sleep(1)
     counter += 1
