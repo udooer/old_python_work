@@ -53,8 +53,11 @@ def main():
         while 1:
         
             x=ser.readline().decode()
-            print(x)
-            parse_data(x)
+            if (x!=''):
+                print(x)
+                parse_data(x)
+            else:
+                print("Get nothing!!")
 
     except KeyboardInterrupt:
         
