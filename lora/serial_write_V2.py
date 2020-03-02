@@ -33,7 +33,7 @@ with open(save_filename, mode='r') as csv_file:
 
 while 1:
     time_s = str(datetime.datetime.utcnow().time())
-    send_data = s
+    send_data = s + ';' + time_s + '\n'
     ser.write(send_data.encode())
     time.sleep(60)
     counter += 1
